@@ -1,1 +1,1 @@
-# Personal-Website
+# Personal-Website is to showcase all of my accomplishments so far and it has become a place i can add more achievements in the future. Hopefully recieving my certficiate from here will also be added someday

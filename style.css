@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+} 
+
+html, 
+body {
+    margin: 0;
+    font-size: 1.1em;
+    text-align: center;
+    color:aliceblue
+}
+
+.holy-grail header{
+    padding: 0 20px;  
+}
+
+.holy-grail footer,
+.hg-sidebar,
+.holy-grail-content {
+    padding: 20px;
+}
+
+.holy-grail header, 
+.holy-grail footer {
+    background-color: gray;
+}
+
+.hg-sidebar {
+    background-color: red;
+}
+.holy-grail-content {
+    background-color: darkred;
+} 
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: x-large;
+    padding-left: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+FLEX
+Make body atleast 100% height
+*/
+
+.holy-grail {
+    min-height: 100vh;
+}
+
+/*
+Flex value is 1 1 auto to make body shrinkable and extensible
+*/
+
+.holy-grail, .holy-grail-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+} 
+
+/* Content body item is made extensible too. */ 
+
+.holy-grail-content {
+    flex: 1 1 auto;
+}
+
+/*
+Put the first side bar before content
+*/
+
+.holy-grail-sidebar-1 {
+    order: -1;
+}
+
+/* Bigger screen */
+
+@media (min-width: 768px) {
+    .holy-grail-body {
+        flex-direction: row;
+    } 
+
+    .hg-sidebar {
+flex: 0 0 260px
+    }
+}
+
+section {
+    font-style: bold;
+} 
+
+li {
+    text-align: left;
+}
+
+h6 {
+    text-align: left;
+}
